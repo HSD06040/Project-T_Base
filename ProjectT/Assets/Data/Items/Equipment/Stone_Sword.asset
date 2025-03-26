@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e47ec638ac0a74d8937487aad90a67, type: 3}
+  m_Name: Stone_Sword
+  m_EditorClassIdentifier: 
+  itemType: 1
+  itemName: Stone_Sword
+  icon: {fileID: 1526008332, guid: a9ca9a41598dd2e44b125928045c518f, type: 3}
+  dropChance: 0
+  equipmentType: 0
+  itemCooldown: 0
+  itemEffects: []
+  itemEffectDescription: nice sword
+  strenght: 4
+  agility: 4
+  intelligence: 4
+  vitality: 4
+  damage: 0
+  critChance: 0
+  critPower: 0
+  maxHealth: 0
+  armor: 0
+  evasion: 0
+  magicResistance: 0
+  fireDamage: 0
+  iceDamage: 0
+  lightingDamage: 0
+  craftingMaterials:
+  - data: {fileID: 11400000, guid: 6d0ea6f6a0117c6488d013110c8aa7dd, type: 2}
+    stackSize: 2
+  - data: {fileID: 11400000, guid: a5ec1f483a36703488ce5deb9a3abf31, type: 2}
+    stackSize: 1

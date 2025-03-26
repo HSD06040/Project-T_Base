@@ -1,31 +1,34 @@
-using System;
+using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
 
-[Serializable]
+[System.Serializable]
 public class Stat
 {
     [SerializeField] private int baseValue;
+
     public List<int> modifiers;
-    
     public int GetValue()
     {
-        int totalValue = baseValue;
-
+        int finalValue = baseValue;
         foreach (int modifier in modifiers)
         {
-            totalValue += modifier;
+            finalValue += modifier;
         }
-
-        return totalValue;
+        return finalValue;
     }
 
-    public void AddModifier(int value) => modifiers.Add(value);
-
-    public void RemoveModifier(int value) => modifiers.Remove(value);
-
-    public void SetBaseValue(int value)
+    public void SetDefaultValue(int _value)
     {
-        baseValue = value;
+        baseValue = _value;
+    }
+
+    public void AddModifier(int _modifiers)
+    {
+        modifiers.Add(_modifiers);
+    }
+    public void RemoveModifier(int _modifiers)
+    {
+        modifiers.Remove(_modifiers);
     }
 }
